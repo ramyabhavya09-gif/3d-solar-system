@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Solar System</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>🌌 Solar System Explorer</h1>
+    <p>Explore our Sun and eight planets</p>
+  </header>
+
+  <main>
+    <section class="space" aria-label="Animated Solar System">
+      <div class="sun" title="Sun">☀</div>
+
+      <div class="orbit orbit1">
+        <button class="planet mercury" data-name="Mercury" aria-label="Mercury"></button>
+      </div>
+      <div class="orbit orbit2">
+        <button class="planet venus" data-name="Venus" aria-label="Venus"></button>
+      </div>
+      <div class="orbit orbit3">
+        <button class="planet earth" data-name="Earth" aria-label="Earth"></button>
+      </div>
+      <div class="orbit orbit4">
+        <button class="planet mars" data-name="Mars" aria-label="Mars"></button>
+      </div>
+      <div class="orbit orbit5">
+        <button class="planet jupiter" data-name="Jupiter" aria-label="Jupiter"></button>
+      </div>
+      <div class="orbit orbit6">
+        <button class="planet saturn" data-name="Saturn" aria-label="Saturn"></button>
+      </div>
+      <div class="orbit orbit7">
+        <button class="planet uranus" data-name="Uranus" aria-label="Uranus"></button>
+      </div>
+      <div class="orbit orbit8">
+        <button class="planet neptune" data-name="Neptune" aria-label="Neptune"></button>
+      </div>
+    </section>
+
+    <section class="information">
+      <h2 id="planet-name">Welcome, Space Explorer!</h2>
+      <p id="planet-info">
+        Select any planet in the Solar System to discover interesting facts.
+      </p>
+      <button id="toggle-animation">⏸ Pause Orbits</button>
+    </section>
+
+    <section class="legend">
+      <h2>Planets</h2>
+      <div class="planet-list">
+        <button data-name="Mercury">Mercury</button>
+        <button data-name="Venus">Venus</button>
+        <button data-name="Earth">Earth</button>
+        <button data-name="Mars">Mars</button>
+        <button data-name="Jupiter">Jupiter</button>
+        <button data-name="Saturn">Saturn</button>
+        <button data-name="Uranus">Uranus</button>
+        <button data-name="Neptune">Neptune</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with HTML, CSS and JavaScript | Solar System Explorer</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
